@@ -1,0 +1,301 @@
+1: What is HTML?
+
+HTML (HyperText Markup Language) is the standard language used to create and design documents on the 
+World Wide Web. It structures web content and tells the browser how to display text, images, and other forms of multimedia.
+
+Example:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First HTML Page</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
+
+
+2: What is the use of Doctype?
+
+The <!DOCTYPE> declaration is used to specify the HTML version used in the document. 
+It ensures that the web page is rendered correctly and consistently across different browsers.
+
+Example:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Document</title>
+</head>
+<body>
+  <p>This is a valid HTML5 document.</p>
+</body>
+</html>
+
+
+
+3: What are elements and attributes?
+
+Elements: HTML elements are the building blocks of HTML pages. 
+An HTML element is defined by a start tag, some content, and an end tag.
+
+Example:
+
+html
+Copy code
+<p>This is a paragraph element.</p>
+
+Attributes: Attributes provide additional information about HTML elements.
+ They are included in the opening tag and usually come in name/value pairs.
+
+Example:
+
+html
+Copy code
+<a href="https://www.example.com">Visit Example</a>
+
+<br>
+
+
+4: Explain tags in HTML:
+
+Tags are the HTML code that defines elements. They are enclosed in angle brackets, for example, 
+<h1>, <p>, and <div>. Tags usually come in pairs: an opening tag (<tagname>) and a closing tag (</tagname>),
+ although some tags are self-closing.
+
+Example:
+
+html
+Copy code
+<h5>This is a heading tag</h5>
+<p>This is a paragraph tag.</p>
+
+
+5: Difference between block and inline elements:
+
+Block elements: These elements take up the full width available and always start on a new line.
+
+Example:
+
+html
+Copy code
+<div>This is a block element.</div>
+<p>This is another block element.</p>
+
+ Inline elements: These elements only take up as much width as necessary and do not start on a new line.
+
+Example:
+
+html
+Copy code
+<span>This is an inline element.</span>
+<a href="#">This is another inline element.</a>
+
+<br>
+
+6: Difference between semantics and non-semantics elements:
+
+Semantic elements: These elements clearly describe their meaning in a human- and machine-readable way.
+
+Example:
+
+html
+Copy code
+<header>
+  <h3>This is a header</h3>
+</header>
+<article>
+  <p>This is an article.</p>
+</article>
+
+
+Non-semantic elements: These elements don’t provide clear meaning about their content.
+
+Example:
+
+html
+Copy code
+<div>This is a non-semantic element.</div>
+<span>This is another non-semantic element.</span>
+
+<br>
+
+7: Difference between readonly and disabled:
+
+Readonly: A readonly attribute on an input element means the user can see the 
+value but cannot modify it. It still sends the data when the form is submitted.
+
+Example:
+
+html
+Copy code
+<input type="text" value="readonly" readonly>
+
+
+Disabled: A disabled attribute on an input element means the user cannot interact with it,
+ and it does not send data when the form is submitted.
+
+Example:
+
+html
+Copy code
+<input type="text" value="disabled" disabled>
+
+<br>
+
+8: Use of required attribute:
+
+The required attribute in HTML is used on input elements to specify that the user must 
+fill out the field before submitting the form.
+
+Example:
+
+html
+Copy code
+<input type="text" required>
+
+<br>
+
+9: Explain anchor tag and its attributes:
+
+The <a> (anchor) tag is used to create hyperlinks.
+The href attribute specifies the URL of the page the link goes to. Other attributes include target 
+(specifies where to open the linked document), title (additional information about the link), and
+rel (relationship between the current document and the linked document).
+
+Example:
+
+html
+Copy code
+<a href="https://www.example.com" target="_blank" title="Example">Visit Example</a>
+
+<br>
+10: How to embed an image on a webpage:
+
+The <img> tag is used to embed an image on a webpage. The src attribute specifies the path to the image,
+ and the alt attribute provides alternative text if the image cannot be displayed.
+
+Example:
+
+html
+Copy code
+<img src="image.jpg" alt="Description of image">
+<br>
+
+11: What is a list, types of lists, and how to display a list in HTML:
+
+Lists: HTML supports ordered lists, unordered lists, and definition lists.
+Ordered lists: Use the <ol> tag, with list items inside <li> tags.
+
+Example:
+
+html
+Copy code
+<ol>
+  <li>Apple</li>
+  <li>Mango</li>
+</ol>
+
+
+Unordered lists: Use the <ul> tag, with list items inside <li> tags.
+
+Example:
+
+html
+Copy code
+<ul>
+  <li>Flipkart</li>
+  <li>Meesho</li>
+</ul>
+
+ Definition lists: Use the <dl> tag, with terms inside <dt> tags and descriptions inside <dd> tags.
+
+Example:
+
+html
+Copy code
+<dl>
+  <dt>Term 1</dt>
+  <dd>Description of Term 1</dd>
+</dl>
+<br>
+
+12: How to embed audio and video tags:
+
+Audio: Use the <audio> tag with the src attribute, and optionally the controls attribute to display playback controls.
+
+Example:
+
+html
+Copy code
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+Video: Use the <video> tag with the src attribute, and optionally the controls attribute to display playback controls.
+
+Example:
+
+html
+Copy code
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+
+<br>
+
+13: What is an iframe?
+
+An <iframe> (inline frame) is used to embed another HTML document within the current document.
+
+Example:
+
+html
+Copy code
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+<br>
+
+14: Semantic tags:
+
+Header: Represents the introductory content or a set of navigational links.
+
+Example:
+
+html
+Copy code
+<header>
+  <h1>Welcome to My Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+Footer: Represents the footer of a section or page.
+
+Example:
+
+html
+Copy code
+<footer>
+  <p>&copy; 2024 My Website</p>
+  <nav>
+    <ul>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms of Service</a></li>
+    </ul>
+  </nav>
+</footer>
